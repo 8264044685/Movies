@@ -1,0 +1,10 @@
+1. First Create python Virtual Env
+2. Install requirement.txt using // pip install -r rquirement.txt
+3. Database import in postgresql Database that i given // movies.sql
+4. First you have to create superuser using // python manage.py createsuperuser
+5. After create super user then login in django admin pannel after thet you can acces the APIs
+
+
+
+http://127.0.0.1:8000/apis/movies_list/
+http://127.0.0.1:8000/apis/movies_searchList/?ordering=release_date&search=the
