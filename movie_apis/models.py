@@ -1,4 +1,5 @@
 from django.db import models
+from datetime import date
 
 from django.conf import settings
 from django.db.models.signals import post_save
@@ -8,10 +9,10 @@ from rest_framework.authtoken.models import Token
 
 
 class Movies(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=250)
     rating = models.FloatField(max_length=10)
-    release_date = models.DateField()
-    duration = models.CharField(max_length=25)
+    release_date = models.CharField(max_length=50)
+    duration = models.CharField(max_length=50)
     description = models.TextField(max_length=500)
 
     def __str__(self):
